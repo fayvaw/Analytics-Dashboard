@@ -103,11 +103,14 @@ a{
   color: black;
 }
 
-.sidebar:hover{
-  background-color: orange;
-  transform: translateX(0px);
-  z-index: 10;
+@media only screen and (min-width: 750px) {
+  .sidebar:hover{
+    background-color: orange;
+    transform: translateX(0px);
+    z-index: 10;
+  }
 }
+
 
 .mainSide{
   width: calc(100% + 200px);
@@ -175,6 +178,10 @@ footer{
 
   .sidebar img{
     width: 20px;
+  }
+
+  .hero img{
+    max-width: device-width;
   }
 
   footer{
