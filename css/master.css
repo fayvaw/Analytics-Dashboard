@@ -1,0 +1,183 @@
+*{
+  /* border: 2px solid red; */
+}
+
+body{
+  margin: none;
+  background-color: #F6F8FA;
+  font-family: Arial, sans-serif;
+  padding: none;
+}
+
+nav{
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  margin: none;
+
+}
+
+nav h1{
+  margin-left: 30px;
+}
+
+nav input{
+  background-color: #F6F8FA;
+  border: none;
+  border-radius: 10px;
+  width: 200px;
+  height: 30px;
+  padding: 5px 10px;
+  font-family: Verdana;
+  margin-right: 10px;
+}
+
+.nav-icon {
+  width: 20px;
+  border-radius: 15px;
+  margin: 5px
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 30px;
+}
+
+nav li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+
+nav section{
+  display: flex;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  overflow: hidden;
+}
+
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  height: auto;
+  width: 16em;
+  padding: 10px;
+}
+
+.sidebar-icon{
+  width: 60px;
+  border-radius: 15px;
+  margin: 5px 15px;
+}
+
+.sidebar li{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: -30px;
+  border-radius: 15px;
+}
+
+a{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.sidebar.closed{
+  transform: translateX(-200px);
+}
+
+.sidebar li:hover{
+  background-color: cyan;
+  color: black;
+}
+
+.sidebar:hover{
+  background-color: orange;
+  transform: translateX(0px);
+  z-index: 10;
+}
+
+.mainSide{
+  width: calc(100% + 200px);
+}
+
+.mainSide.full{
+  transform: translateX(-200px);
+}
+
+.hero{
+  width: 100%;
+  max-width: 1040px;
+  min-width: 600px;
+}
+
+.hero-row{
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.hero-row img{
+  border-radius: 15px;
+  margin-left: 20px;
+  width: 48%;
+  min-width: 400px;
+}
+
+#menu{
+  display: flex;
+  justify-content: flex-end;
+  background: none;
+  color: #9f9f9f;
+  font-weight: bold;
+  font-size: 35px;
+  padding: 0px 15px 15px;
+  border: none;
+}
+
+#menu:hover{
+  color: orangered;
+}
+
+footer{
+  text-align: center;
+  font-size: 12pt;
+  background-color: #fff;
+}
+
+@media only screen and (max-width: 750px) {
+  .hero-row{
+    flex-direction: column;
+  }
+
+  #menu{
+    font-size: 25px;
+    font-weight: normal;
+    padding-right: 4px;
+  }
+
+  .sidebar{
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+  .sidebar img{
+    width: 20px;
+  }
+
+  footer{
+    font-size: 10pt;
+  }
+}
