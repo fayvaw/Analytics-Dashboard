@@ -176,6 +176,10 @@ footer{
     font-weight: normal;
   }
 
+  .container{
+    overflow: scroll;
+  }
+
   .sidebar img{
     width: 20px;
   }
